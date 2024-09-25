@@ -2,11 +2,21 @@
 <?php
 
 /*Criando o banco*/
-$pdo = new PDO("mysql:dbname = rohoot;host=localhost:3306", "root", "cimatec");
 
-if ($spo){
+
+try{
+    $pdo = new PDO("mysql:dbname = rohoot;host=localhost:3306", "root", "cimatec");
+}
+catch (Exception $e){
+    echo "Erro ao conectar ao banco ".$e->getMessage()."\n";
+}
+if ($pdo){
     echo"Banco conectado";
 }
+
+
+$verificar = query("SELECT * FROM usuario");
+
 
 ?>
 
