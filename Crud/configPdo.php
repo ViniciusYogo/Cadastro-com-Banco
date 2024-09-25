@@ -15,9 +15,6 @@ if ($pdo){
 }
 
 
-$verificar = query("SELECT * FROM usuario");
-
-
 ?>
 
 
