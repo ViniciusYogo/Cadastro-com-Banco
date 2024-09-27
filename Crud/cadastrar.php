@@ -1,5 +1,5 @@
 <?php
-require '/xampp/htdocs/Cadastro-com-Banco/Crud/configPdo.php';
+require 'configPdo.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,13 +10,13 @@ require '/xampp/htdocs/Cadastro-com-Banco/Crud/configPdo.php';
 </head>
 <body>
 
-    <form action="Cadastro-com-Banco/Crud/inserir.php" method="get">
+    <form action="inserir.php" method="post">
 
     <label>Escreva seu nome:</label>
-    <input type="text" placeholder="Nome" name="inputNome">
+    <input type="text" placeholder="Nome" name="inputNome" require>
     <br>
     <label>Escreva seu email</label>
-    <input type="email" placeholder="Email" name="inputEmail">
+    <input type="email" placeholder="Email" name="inputEmail" require>
     <button type="submit">Enviar</button>
     </form>
 
