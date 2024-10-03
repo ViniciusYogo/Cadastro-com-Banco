@@ -43,6 +43,8 @@ if ($sql->rowCount() > 0) {
                     <td> <?php echo $dados['id']; ?></td>
                     <td> <?php echo $dados['nome']; ?></td>
                     <td> <?php echo $dados['email']; ?></td>
+                    <td><a href="editar.php?id<?= $dados['id']?>">Editar</a></td>
+                    <td><a href="excluir.php?id<?= $dados['id']?>">Excluir</a></td>
                 </tr>
             <?php endforeach; ?>
     </table>

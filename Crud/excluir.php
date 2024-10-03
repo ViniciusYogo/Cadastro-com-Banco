@@ -12,7 +12,7 @@ require 'configPdo.php';
 
     <form action="excluir.php" method="post">
         <label>nome</label>
-        <input type="text" name="inputNome">
+        <input type="text" name="inputNome" required>
         <button type="submit">Excluir</button>
     </form>
 
